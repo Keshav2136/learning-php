@@ -1,19 +1,24 @@
 <?php
-echo "Hello";
 
-if (x==12&y==15) {
-    echo "Working!";
-    x++;
-    y++;
-}
-elseif (x==13) {
-    
-}
-else {
-    echo "no";
-}
+echo 0;
 
-for ($i=0; $i < 5; $i++) { 
-    echo "<h1>Good</h1>";
+$s=array("hi"=>"yo","hnh");
+print_r($s);
+print_r(array_count_values($s));
+echo $s;
+
+function run(){
+    print_r("Nice");
 }
+run();
+
+$city=array("Delhi","Mumbai","Kolkata","Hyderabad");
+$state=array("Haryana", "Punjab","Assam","Tripura");
+
+for($i=0;$i<=4;$i++){
+    echo (rand($city[0],$city[3]))."";
+}
+print_r (rand($city[0],$city[3]));
+print_r (rand($state[0],$state[3]));
+
 ?>
