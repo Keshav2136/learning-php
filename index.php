@@ -37,6 +37,26 @@ else{
     echo "";
 }
 
+# Nested 'for' loop
+for ($i=0; $i < 10; $i++) { 
+    for ($j=10; $j >= $i+1; $j--) { 
+        echo "*";
+    }
+    echo "<br>";
+}
+
+echo "<br>";
+
+# Printing patterns with 'for' statements using if-else
+for ($d=0; $d <= 10; $d++) {
+    for ($g=3; $g >= ($d%2); $g--) {
+        if ($g%2 == 0) {
+            echo "*";
+        }
+    }
+    echo "<br>";
+}
+
 $city=array("Delhi","Mumbai","Kolkata","Hyderabad");
 $state=array("Haryana", "Punjab","Assam","Tripura");
 
