@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="users-signup">
+    <h1 id="user-signup">User Signup</h1>
+      <form action="user_signup.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+          <br>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+          <br>
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender" required>
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+          <label for="place">Place:</label>
+          <input type="text" name="place" id="place" required>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="users-signup">
+      <h1 id="user-signup">Product Listing</h1>
+      <form action="submit_product.php" method="post" enctype="multipart/form-data">
+        <label for="vendor_id">Vendor ID:</label>
+        <input type="text" name="vendor_id" id="vendor_id" required>
+        <br>
+        <label for="product_name">Product Name:</label>
+        <input type="text" name="product_name" id="product_name" required>
+        <br>
+        <label for="product_picture">Product Picture:</label>
+        <input type="file" name="product_picture" id="product_picture" accept="image/*" required>
+        <br>
+        <label for="product_category">Product Category:</label>
+        <select name="product_category" id="product_category" required>
+          <option value=""></option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books</option>
+          <option value="clothes">Clothes</option>
+          <option value="toys">Toys</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+      
+    </div>
+</body>
+</html>
